@@ -77,10 +77,10 @@ async def start(bot, cmd):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
+								InlineKeyboardButton("𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=https://t.me/mantapfilestorage)
 							],
 							[
-								InlineKeyboardButton("🔔𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄🔔", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+								InlineKeyboardButton("Join Channel", url="https://t.me/mantapvids")
 							],
 							[
 								InlineKeyboardButton("🔄 𝗥𝗲𝗳𝗿𝗲𝘀𝗵 🔄", callback_data="refreshmeh")
@@ -105,8 +105,8 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtu.be/RPs9vz_neXg"),
-						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="t.me/mo_Tech_YT")
+						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtube.com/c/softmilk"),
+						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="t.me/mantapvids")
 					],
 					[
 						InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
@@ -123,7 +123,7 @@ async def start(bot, cmd):
 				if user.status == "kicked":
 					await bot.send_message(
 						chat_id=cmd.from_user.id,
-						text="Sorry Sir, You are Banned to use me. Contact me [Click Here](https://t.me/Mrk_Yt).",
+						text="Sorry Sir, You are Banned to use me. Contact me [Click Here](https://t.me/mantapvids).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -136,13 +136,13 @@ async def start(bot, cmd):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
+								InlineKeyboardButton("🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=https://t.me/mantapfilestorage)
 							],
                                                         [
-							        InlineKeyboardButton("🔔𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄🔔", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+							        InlineKeyboardButton("Join Channel", url="https://t.me/mantapvids")
 							],
 							[
-								InlineKeyboardButton("🔄 𝗥𝗲𝗳𝗿𝗲𝘀𝗵 / 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", url=f"https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_id}")
+								InlineKeyboardButton("🔄 𝗥𝗲𝗳𝗿𝗲𝘀𝗵 / 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", url=f"https://telegram.dog/{BOT_USERNAME}?start=mantapvids{file_id}")
 							]
 						]
 					),
@@ -152,7 +152,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact me [Click Here](https://t.me/Mrk_YT).",
+					text="Something went Wrong. Contact me [Click Here](https://t.me/mantapvids).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -160,7 +160,7 @@ async def start(bot, cmd):
 		try:
 			file_id = int(usr_cmd)
 			send_stored_file = await bot.copy_message(chat_id=cmd.from_user.id, from_chat_id=DB_CHANNEL, message_id=file_id)
-			await send_stored_file.reply_text(f"**Here is Sharable Link of this file:** https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_id}\n\n__To Retrive the Stored File, just open the link!__", disable_web_page_preview=True, quote=True)
+			await send_stored_file.reply_text(f"**Here is Sharable Link of this file:** https://telegram.dog/{BOT_USERNAME}?start=mantapvids{file_id}\n\n__To Retrive the Stored File, just open the link!__", disable_web_page_preview=True, quote=True)
 		except Exception as err:
 			await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
 
@@ -172,12 +172,12 @@ async def main(bot, message):
 			forwarded_msg = await message.forward(DB_CHANNEL)
 			file_er_id = forwarded_msg.message_id
 			await forwarded_msg.reply_text(f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!", parse_mode="Markdown", disable_web_page_preview=True)
-			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_er_id}"
+			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=mantapvids{file_er_id}"
 			await editable.edit(
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)], [InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Mo_Tech_YT"), InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://youtu.be/RPs9vz_neXg")]]
+					[[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)], [InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mantapvids"), InlineKeyboardButton("𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url="https://youtube/c/softmilk")]]
 				),
 				disable_web_page_preview=True
 			)
@@ -203,7 +203,7 @@ async def main(bot, message):
 		try:
 			forwarded_msg = await message.forward(DB_CHANNEL)
 			file_er_id = forwarded_msg.message_id
-			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=AbirHasan2005_{file_er_id}"
+			share_link = f"https://telegram.dog/{BOT_USERNAME}?start=mantapvids{file_er_id}"
 			CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝐆𝐞𝐭 𝐒𝐡𝐚𝐫𝐚𝐛𝐥𝐞 𝐒𝐭𝐨𝐫𝐞𝐝 𝐋𝐢𝐧𝐤", url=share_link)]]))
 			if message.chat.username:
 				await forwarded_msg.reply_text(f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
@@ -294,7 +294,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞𝐬 𝐨𝐟 𝐁𝐨𝐭", url="https://github.com/MRK-YT/PyroFilesStoreBot")
+						InlineKeyboardButton("Join Channel", url="https://t.me/mantapvids")
 					],
 					[
 						InlineKeyboardButton("𝐆𝐨 𝐇𝐨𝐦𝐞", callback_data="gotohome"),
@@ -311,7 +311,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞𝐬 𝐨𝐟 𝐁𝐨𝐭", url="https://github.com/MRK-YT/PyroFilesStoreBot")
+						InlineKeyboardButton("Join Channel", url="https://t.me/mantapvids")
 					],
 					[
 						InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
@@ -328,8 +328,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtu.be/RPs9vz_neXg"),
-						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mo_Tech_yt")
+						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtube/c/softmilk"),
+						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mantapvids")
 					],
 					[
 						InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
@@ -345,7 +345,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact me [Click Here](https://t.me/Mrk_Yt).",
+						text="Sorry Sir, You are Banned to use me. Contact me [Click Here](https://t.me/mantapvids).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -356,10 +356,10 @@ async def button(bot, cmd: CallbackQuery):
 					reply_markup=InlineKeyboardMarkup(
 						[
 							[
-								InlineKeyboardButton("🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
+								InlineKeyboardButton("𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link)
 							],
 							[
-                                                                InlineKeyboardButton("🔔𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄🔔", url="https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ")
+                                                                InlineKeyboardButton("🔔𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 𝐘𝐎𝐔𝐓𝐔𝐁𝐄🔔", url="https://youtube.com/c/softmilk")
 							],
 							[
 								InlineKeyboardButton("🔄 𝗥𝗲𝗳𝗿𝗲𝘀𝗵 🔄", callback_data="refreshmeh")
@@ -371,7 +371,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact me [Click Here](https://t.me/Mrk_Yt).",
+					text="Something went Wrong. Contact me [Click Here](https://t.me/mantapvids).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -383,8 +383,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtu.be/RPs9vz_neXg"),
-						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Mo_Tech_Yt")
+						InlineKeyboardButton("𝗧𝘂𝘁𝗼𝗿𝗶𝗮𝗹 𝗩𝗶𝗱𝗲𝗼", url="https://youtube.com/c/softmilk"),
+						InlineKeyboardButton("𝐁𝐨𝐭 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/mantapvids")
 					],
 					[
 						InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
