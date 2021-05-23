@@ -28,14 +28,14 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📺 **Support :** [YouTube Channel](https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Mo_Tech_YT)
+📢 **Updates Channel:** [Discovery Projects](https://t.me/mantapvids)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @MRK_YT
+🧑🏻‍💻 **Developer:** @mantapvids
 
-📺 **Support :** [YouTube Channel](https://youtube.com/channel/UCmGBpXoM-OEm-FacOccVKgQ)
+📺 **Support :** [YouTube Channel](https://youtube.com/c/softmilk)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Mo_Tech_YT)
+📢 **Updates Channel:** [Discovery Projects](https://t.me/mantapvids)
 
 Donate Now (coming soon)
 """
